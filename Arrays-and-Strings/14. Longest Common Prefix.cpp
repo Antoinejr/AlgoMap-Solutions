@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include <algorithm>
 class Solution {
 private:
     std::string findCommonPrefix(std::string word1, std::string word2) {
@@ -25,7 +26,7 @@ public:
         **/
         
         std::sort(strs.begin(), strs.end());
-        std:string s1 = strs[0], s2 = strs[strs.size()-1];
+        std::string s1 = strs[0], s2 = strs[strs.size()-1];
         int idx = 0;
         while(idx < std::min(s1.size(), s2.size())) {
             if(s1[idx] != s2[idx]) break;
