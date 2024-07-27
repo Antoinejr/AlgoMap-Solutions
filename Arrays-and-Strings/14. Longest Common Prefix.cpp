@@ -25,6 +25,14 @@ public:
         *return result;
         **/
         
+        
+        /**
+        * Solution by sorting
+        * sort the array in lexilogical order
+        * compare the first last values 
+        * (N + MNLogN) N: length of array, M:  number of chars
+        */
+        
         std::sort(strs.begin(), strs.end());
         std::string s1 = strs[0], s2 = strs[strs.size()-1];
         int idx = 0;
