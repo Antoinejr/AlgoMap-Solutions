@@ -1,3 +1,9 @@
+#include <unordered_map>
+#include <string>
+
+// not good practice to use during production due to namespace collision.
+
+using namespace std;
 class Solution {
 public:
     int maxNumberOfBalloons(string text) {
